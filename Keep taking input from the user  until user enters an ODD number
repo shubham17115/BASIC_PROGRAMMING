@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+int main() 
+{
+    int n;
+for(int i=1;i>=1; i++)
+{
+    printf("Enter a number:");
+    scanf("%d",&n);
+    if((n%2)!=0)
+    {
+        printf("Warning! You have entered an ODD number!");
+        break;
+    }
+}
+}
