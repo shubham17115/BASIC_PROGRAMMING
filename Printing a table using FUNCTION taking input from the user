@@ -1,0 +1,20 @@
+#include<stdio.h>
+//function declaration
+void printTable();
+//main fumction
+int main()
+{
+    int n;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    printTable(n);
+}
+
+//function definition
+void printTable(int z)
+{
+    for(int i=1;i<=10;i++)
+    {
+        printf("%d X %d=%d\n",z,i,(z*i));   
+    }    
+}
