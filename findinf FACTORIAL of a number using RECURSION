@@ -1,0 +1,16 @@
+#include <stdio.h>
+int fact(int N);
+int main() 
+{
+    int n;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    printf("The factorial of %d is: %d",n,(fact(n)));
+}
+//RECURSVE FUNCTION
+int fact(int N)
+{
+    if(N==1) { return 1; }
+    int factNm1= fact(N-1);
+    int Fact = factNm1*N;
+}
