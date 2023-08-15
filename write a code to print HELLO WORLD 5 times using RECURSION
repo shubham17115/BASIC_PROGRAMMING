@@ -1,0 +1,17 @@
+#include<stdio.h>
+void prinntHW(int count);
+int main()
+{
+  int n;
+printf("Enter the no. of times you want to print HELLO WORLD :");
+scanf("%d",&n);
+        printHW(n);
+}
+//RECURSIVE functions()
+void printHW(int count)
+{
+            //it will return nothing
+if(count==0){ return; }
+      printf("Hello World!\n");
+      printHW(count-1);
+}
