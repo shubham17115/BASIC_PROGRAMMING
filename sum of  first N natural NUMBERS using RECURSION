@@ -1,0 +1,16 @@
+#include<stdio.h>
+int sum(int N);
+int main()
+{
+  int n;
+  printf("Enter the number till you want the sum:");
+  scanf("%d",&n);
+  printf("sum of first %d natural numbers:%d ",n,sum(n));
+}
+int sum(int N)
+{
+  if(N==1) { return 1; }
+int SumNm1=sum(N-1);
+int SUMN = SumNm1 + N;
+   return SUMN;
+}
