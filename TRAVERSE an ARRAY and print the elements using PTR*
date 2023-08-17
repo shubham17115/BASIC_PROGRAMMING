@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+  char alphabet[10]={'A','B','C','D','E','F','G','H','I','J'};
+  char *ptr=&alphabet; //OR char*ptr=&alphabet[0];
+  for(int i=0;i<10;i++)
+     {
+          printf("%c\n",*ptr);
+          ptr++;
+     }
+}
