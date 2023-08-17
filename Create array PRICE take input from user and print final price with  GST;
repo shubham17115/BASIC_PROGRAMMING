@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+   int price[3];
+   printf("Enter price of item 1:");
+   scanf("%d",&price[0]);
+   printf("Enter price of item 2:");
+   scanf("%d",&price[1]);
+   printf("Enter price of item  3:");
+   scanf("%d",&price[2]);
+printf("Final price of item 1:%f\n",(price[0]+(price[0]*0.18)));
+printf("Final price of item 2:%f\n",(price[1]+(price[1]*0.18)));
+printf("Final price of item 3:%f\n",(price[2]+(price[2]*0.18)));
+}
+    
