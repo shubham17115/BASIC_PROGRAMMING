@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int aadhar[10];
+int*ptr=aadhar;
+for(int i=0;i<10;i++)
+{
+printf("%d index:",i);
+scanf("%d",(ptr+i));
+}
+for(int i=0;i<10;i++)
+{
+printf("%d\n",*ptr);
+ptr++;
+}
+
+}
