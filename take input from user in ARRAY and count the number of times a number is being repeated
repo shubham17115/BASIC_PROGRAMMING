@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int comp;
+    int count=0;
+    printf("Enter the size of Array:");
+    scanf("%d",&n);
+    
+    int Number[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("Enter the element at position [%d]:",i);
+        scanf("%d",&Number[i]);
+    }
+    printf("Enter the number to which you want to compare:");
+    scanf("%d",&comp);
+    for(int i=0;i<n;i++)
+    {
+        if(Number[i]==comp)
+        {
+            count++;
+        }
+    }
+    printf("No. of %d in The Array=%d",comp,count);
+}
