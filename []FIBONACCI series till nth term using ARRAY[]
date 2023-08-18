@@ -1,0 +1,32 @@
+#include<stdio.h>
+void fibonacci(int fib[], int n);
+void printFib(int fib[],int m);
+int main()
+{
+  int n;
+printf("Enter the number:");
+scanf("%d",&n);
+int number[n];
+//FUN() CALLS
+fibonacci(number,n);
+printFib(number,n);
+}
+//FUN() to find FIBONACCI series
+void fibonacci(int fib[],int n)
+{
+  for(int i=0;i<n;i++)
+{
+if(i==0){ fib[0]=0;continue;}
+if(i==1){ fib[1]=1;continue;}
+fib[i]=fib[i-1]+fib[i-2];
+}
+}
+//Fun() to print FIBONACCI
+void printFib(int fib[],int m)
+{
+printf("Fibonacci series till %d term:",m);
+for(int i=0;i<m;i++)
+{
+printf("%d\t",fib[i]);
+}
+}
